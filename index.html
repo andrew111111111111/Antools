@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antools</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="#">antools.</a>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Collections</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <ul class="action-list">
+          <li class="action-item">
+            <button class="button-login">Login</button>
+          </li>
+          <li class="button-item">
+            <button class="button-sing_up">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Awesome tools for Designer & Developer.</h1>
+          <p class="hero-text">
+            Antool is a web collection of information on paid or free Design and
+            Development tools
+          </p>
+          <div class="hero-search">
+            <input
+              class="search-input"
+              type="text"
+              placeholder="more than 430+ tools..."
+            />
+            <button class="search-button">Search</button>
+          </div>
+          <div class="hero-about">
+            <ul class="about-list">
+              <li class="about-item">
+                <a
+                  class="about-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <img src="./src/img/facebook.svg" alt="facebook" />
+                </a>
+              </li>
+              <li class="about-item">
+                <a
+                  class="about-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <img src="./src/img/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+              <li class="about-item">
+                <a
+                  class="about-link"
+                  href="https://x.com/i/flow/login"
+                  target="_blank"
+                >
+                  <img src="./src/img/twitter.svg" alt="twitter" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="category">
+        <div class="container">
+          <h2 class="category-title">Most Popular Tools</h2>
+          <p class="category-subtitle">
+            Tools for the best Designers and Developers most popularly used in
+            the world
+          </p>
+          <ul class="category-list">
+            <li class="category-item">
+              <article class="category-product">
+                <div class="product-grup">
+                  <img src="./src/img/figma.webp" alt="figma_logo" />
+                  <h3 class="product-title">FIGMA</h3>
+                  <p class="product-about">Free</p>
+                  <p class="product-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="product-action">
+                  <input type="checkbox" id="heart0" />
+                  <label for="heart0"></label>
+                  <button class="product-saved"></button>
+                  <a class="product-link" href="#">Visit</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="category-item">
+              <article class="category-product">
+                <div class="product-grup">
+                  <img src="./src/img/sketch.svg" alt="Sketch_logo" />
+                  <h3 class="product-title">Sketch</h3>
+                  <p class="product-about">Trial & Paid</p>
+                  <p class="product-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="product-action">
+                  <input type="checkbox" id="heart1" />
+                  <label for="heart1"></label>
+                  <button class="product-saved"></button>
+                  <a class="product-link" href="#">Visit</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="category-item">
+              <article class="category-product">
+                <div class="product-grup">
+                  <img
+                    src="./src/img/visual-studio-code.svg"
+                    alt="Visual_Studio_Code_logo"
+                  />
+                  <h3 class="product-title">Visual Studio Code</h3>
+                  <p class="product-about">Free</p>
+                  <p class="product-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="product-action">
+                  <input type="checkbox" id="heart2" />
+                  <label for="heart2"></label>
+                  <button class="product-saved"></button>
+                  <a class="product-link" href="#">Visit</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="category-item">
+              <article class="category-product">
+                <div class="product-grup">
+                  <img src="./src/img/notion.webp" alt="notion_logo" />
+                  <h3 class="product-title">Notion</h3>
+                  <p class="product-about">Trial & Paid</p>
+                  <p class="product-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="product-action">
+                  <input type="checkbox" id="heart3" />
+                  <label for="heart3"></label>
+                  <button class="product-saved"></button>
+                  <a class="product-link" href="#">Visit</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="category-item">
+              <article class="category-product">
+                <div class="product-grup">
+                  <img src="./src/img/slack.svg" alt="slack_logo" />
+                  <h3 class="product-title">Slack</h3>
+                  <p class="product-about">Trial & Paid</p>
+                  <p class="product-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="product-action">
+                  <input type="checkbox" id="heart4" />
+                  <label for="heart4"></label>
+                  <button class="product-saved"></button>
+                  <a class="product-link" href="#">Visit</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="category-item">
+              <article class="category-product">
+                <div class="product-grup">
+                  <img src="./src/img/invision.svg" alt="invision_logo" />
+                  <h3 class="product-title">Invision</h3>
+                  <p class="product-about">Trial & Paid</p>
+                  <p class="product-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="product-action">
+                  <input type="checkbox" id="heart5" />
+                  <label for="heart5"></label>
+                  <button class="product-saved"></button>
+                  <a class="product-link" href="#">Visit</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <button class="category-button">Load more</button>
+        </div>
+      </section>
+      <section class="collaborations">
+        <div class="container">
+          <h2 class="collaborations-title">Trusted more than 150+ brand</h2>
+          <ul class="collaborations-list">
+            <li class="collaborations-item">
+              <a class="collaborations-link" href="https://www.microsoft.com/"
+                >Microsoft</a
+              >
+            </li>
+            <li class="collaborations-item">
+              <a class="collaborations-link" href="https://www.google.com/"
+                >Google</a
+              >
+            </li>
+            <li class="collaborations-item">
+              <a class="collaborations-link" href="https://slack.com/">slack</a>
+            </li>
+            <li class="collaborations-item">
+              <a class="collaborations-link" href="https://wordpress.com/"
+                >WordPress</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="helper">
+        <div class="container">
+          <h2 class="helper-title">Newcomer Tools</h2>
+          <p class="helper-text">
+            Wow! see the latest update of the most recommended tools from
+            reliable designers and developers
+          </p>
+          <button class="helper-button">Explore more</button>
+          <ul class="helper-list">
+            <li class="helper-item">
+              <article class="helper-produkt">
+                <div class="product-grup">
+                  <img src="./src/img/zeplin.webp" alt="zeplin" />
+                  <h3 class="product-title">Zeplin</h3>
+                  <p class="product-about">Free & Paid</p>
+                  <p class="product-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="product-action">
+                  <input type="checkbox" id="heart6" />
+                  <label for="heart6"></label>
+                  <button class="product-saved"></button>
+                  <a class="product-link" href="#">Visit</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="helper-item">
+              <article class="helper-produkt">
+                <div class="product-grup">
+                  <img src="./src/img/phpstorm.webp" alt="phpstorm_logo" />
+                  <h3 class="product-title">PHPStorm</h3>
+                  <p class="product-about">Free</p>
+                  <p class="product-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="product-action">
+                  <input type="checkbox" id="heart7" />
+                  <label for="heart7"></label>
+                  <button class="product-saved"></button>
+                  <a class="product-link" href="#">Visit</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="helper-item">
+              <article class="helper-produkt">
+                <div class="product-grup">
+                  <img src="./src/img/toolbox.webp" alt="toolbox_logo" />
+                  <h3 class="product-title">Toolbox</h3>
+                  <p class="product-about">Free</p>
+                  <p class="product-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="product-action">
+                  <input type="checkbox" id="heart8" />
+                  <label for="heart8"></label>
+                  <button class="product-saved"></button>
+                  <a class="product-link" href="#">Visit</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="helper-item">
+              <article class="helper-produkt">
+                <div class="product-grup">
+                  <img src="./src/img/procreate.webp" alt="procreate_logo" />
+                  <h3 class="product-title">Procreate</h3>
+                  <p class="product-about">Paid</p>
+                  <p class="product-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="product-action">
+                  <input type="checkbox" id="heart9" />
+                  <label for="heart9"></label>
+                  <button class="product-saved"></button>
+                  <a class="product-link" href="#">Visit</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container">
+          <button class="team-button-left"></button>
+          <article class="team-teammate">
+            <div class="teammate-photo">
+              <img
+                class="teammate-img"
+                src="./src/img/richard.webp"
+                alt="maxim"
+              />
+            </div>
+            <p class="teammate-text">
+              Incididunt cillum do sint sint enim ullamco id deserunt mollit qui
+              reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do
+              nulla velit labore occaecat do deserunt Lorem magna officia
+              incididunt consectetur amet. Sunt consectetur veniam minim ex
+              commodo sint non. Occaecat aute officia excepteur non laboris id
+              qui ad.
+            </p>
+          </article>
+          <button class="team-button-right"></button>
+        </div>
+      </section>
+      <section class="registration">
+        <div class="container">
+          <h2 class="reg-title">Become a contributor?</h2>
+          <p class="reg-text">
+            Join us and get tips & tricks to become a great Designer and
+            Developer
+          </p>
+          <input
+            class="reg-line"
+            type="text"
+            placeholder="Enter your email..."
+          />
+          <button class="reg-button">Join Us</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-info">
+          <a class="logo" href="index.html">antools.</a>
+          <p class="footer-info-copyright">Copyright 2021. Antools</p>
+          <p class="footer-info-text">
+            Antool is a web collection of information on paid or free Design and
+            Development tools
+          </p>
+        </div>
+        <div class="footer-contact">
+          <h3 class="contact-title">Contact Us</h3>
+          <address class="contact-address">
+            <ul class="address-list">
+              <li class="address-item">
+                <a href="tel:+621967463">+621987463</a>
+              </li>
+              <li class="address-item">
+                <a class="address-link" href="tel:+621967463"></a>
+              </li>
+              <li class="address-item">
+                <a class="address-link" href="#">M Building, No.10 A</a>
+              </li>
+              <li class="address-item">
+                <a class="address-link" href="mailto:antools@awesome.com"
+                  >antools@awesome.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-categories">
+          <h3 class="categories-title">Categories</h3>
+          <ul class="categories-list">
+            <li class="categories-item">
+              <a class="categories-link" href="#">Design</a>
+            </li>
+            <li class="categories-item">
+              <a class="categories-link" href="#">Development</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-company">
+          <h3 class="company-title">Company info</h3>
+          <ul class="company-list">
+            <li class="company-item">
+              <a class="company-link" href="#">About Us</a>
+            </li>
+            <li class="company-item">
+              <a class="company-link" href="#">Our Partners</a>
+            </li>
+            <li class="company-item">
+              <a class="company-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
