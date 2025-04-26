@@ -21,16 +21,19 @@
     />
 
     <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a class="logo" href="#">antools.</a>
+      <div class="container header-container">
+        <a class="logo" href="./index.html">antools.</a>
         <nav class="header-nav">
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Categories</a>
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#category">Categories</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">My Collections</a>
@@ -52,19 +55,25 @@
     <main class="main">
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Awesome tools for Designer & Developer.</h1>
-          <p class="hero-text">
-            Antool is a web collection of information on paid or free Design and
-            Development tools
-          </p>
-          <div class="hero-search">
-            <input
-              class="search-input"
-              type="text"
-              placeholder="more than 430+ tools..."
-            />
-            <button class="search-button">Search</button>
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Awesome tools for Designer & Developer
+              <span class="hero-title-difference">.</span>
+            </h1>
+            <p class="hero-text">
+              Antool is a web collection of information on paid or free Design
+              and Development tools
+            </p>
+            <form class="hero-search">
+              <input
+                class="search-input"
+                type="text"
+                placeholder="more than 430+ tools..."
+              />
+              <button class="search-button">Search</button>
+            </form>
           </div>
+
           <div class="hero-about">
             <ul class="about-list">
               <li class="about-item">
@@ -73,7 +82,11 @@
                   href="https://www.facebook.com/"
                   target="_blank"
                 >
-                  <img src="./src/img/facebook.svg" alt="facebook" />
+                  <img
+                    class="about-photo"
+                    src="./src/img/facebook.svg"
+                    alt="facebook"
+                  />
                 </a>
               </li>
               <li class="about-item">
@@ -82,7 +95,11 @@
                   href="https://www.instagram.com/"
                   target="_blank"
                 >
-                  <img src="./src/img/instagram.svg" alt="instagram" />
+                  <img
+                    class="about-photo"
+                    src="./src/img/instagram.svg"
+                    alt="instagram"
+                  />
                 </a>
               </li>
               <li class="about-item">
@@ -91,7 +108,11 @@
                   href="https://x.com/i/flow/login"
                   target="_blank"
                 >
-                  <img src="./src/img/twitter.svg" alt="twitter" />
+                  <img
+                    class="about-photo"
+                    src="./src/img/twitter.svg"
+                    alt="twitter"
+                  />
                 </a>
               </li>
             </ul>
@@ -99,8 +120,8 @@
         </div>
       </section>
 
-      <section class="category">
-        <div class="container">
+      <section class="category" id="category">
+        <div class="container category-content">
           <h2 class="category-title">Most Popular Tools</h2>
           <p class="category-subtitle">
             Tools for the best Designers and Developers most popularly used in
@@ -111,40 +132,48 @@
               <article class="category-product">
                 <div class="product-grup">
                   <img src="./src/img/figma.webp" alt="figma_logo" />
-                  <h3 class="product-title">FIGMA</h3>
-                  <p class="product-about">Free</p>
-                  <p class="product-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <div class="category-text-grup">
+                    <h3 class="product-title">FIGMA</h3>
+                    <p class="product-about">Free</p>
+                  </div>
                 </div>
+                <p class="product-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
                 <div class="product-action">
-                  <input type="checkbox" id="heart0" />
-                  <label for="heart0"></label>
-                  <button class="product-saved"></button>
+                  <div class="action-interaction">
+                    <input type="checkbox" id="heart0" />
+                    <label for="heart0"></label>
+                    <button class="product-saved"></button>
+                  </div>
+
                   <a class="product-link" href="#">Visit</a>
                 </div>
               </article>
             </li>
-
             <li class="category-item">
               <article class="category-product">
                 <div class="product-grup">
                   <img src="./src/img/sketch.svg" alt="Sketch_logo" />
-                  <h3 class="product-title">Sketch</h3>
-                  <p class="product-about">Trial & Paid</p>
-                  <p class="product-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <div class="category-text-grup">
+                    <h3 class="product-title">Sketch</h3>
+                    <p class="product-about">Trial & Paid</p>
+                  </div>
                 </div>
+                <p class="product-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
                 <div class="product-action">
-                  <input type="checkbox" id="heart1" />
-                  <label for="heart1"></label>
-                  <button class="product-saved"></button>
+                  <div class="action-interaction">
+                    <input type="checkbox" id="heart1" />
+                    <label for="heart1"></label>
+                    <button class="product-saved"></button>
+                  </div>
+
                   <a class="product-link" href="#">Visit</a>
                 </div>
               </article>
             </li>
-
             <li class="category-item">
               <article class="category-product">
                 <div class="product-grup">
@@ -152,73 +181,90 @@
                     src="./src/img/visual-studio-code.svg"
                     alt="Visual_Studio_Code_logo"
                   />
-                  <h3 class="product-title">Visual Studio Code</h3>
-                  <p class="product-about">Free</p>
-                  <p class="product-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <div class="category-text-grup">
+                    <h3 class="product-title">Visual Studio Code</h3>
+                    <p class="product-about">Free</p>
+                  </div>
                 </div>
+                <p class="product-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
                 <div class="product-action">
-                  <input type="checkbox" id="heart2" />
-                  <label for="heart2"></label>
-                  <button class="product-saved"></button>
+                  <div class="action-interaction">
+                    <input type="checkbox" id="heart2" />
+                    <label for="heart2"></label>
+                    <button class="product-saved"></button>
+                  </div>
+
                   <a class="product-link" href="#">Visit</a>
                 </div>
               </article>
             </li>
-
             <li class="category-item">
               <article class="category-product">
                 <div class="product-grup">
                   <img src="./src/img/notion.webp" alt="notion_logo" />
-                  <h3 class="product-title">Notion</h3>
-                  <p class="product-about">Trial & Paid</p>
-                  <p class="product-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <div class="category-text-grup">
+                    <h3 class="product-title">Notion</h3>
+                    <p class="product-about">Trial & Paid</p>
+                  </div>
                 </div>
+                <p class="product-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
                 <div class="product-action">
-                  <input type="checkbox" id="heart3" />
-                  <label for="heart3"></label>
-                  <button class="product-saved"></button>
+                  <div class="action-interaction">
+                    <input type="checkbox" id="heart3" />
+                    <label for="heart3"></label>
+                    <button class="product-saved"></button>
+                  </div>
+
                   <a class="product-link" href="#">Visit</a>
                 </div>
               </article>
             </li>
-
             <li class="category-item">
               <article class="category-product">
                 <div class="product-grup">
                   <img src="./src/img/slack.svg" alt="slack_logo" />
-                  <h3 class="product-title">Slack</h3>
-                  <p class="product-about">Trial & Paid</p>
-                  <p class="product-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <div class="category-text-grup">
+                    <h3 class="product-title">Slack</h3>
+                    <p class="product-about">Trial & Paid</p>
+                  </div>
                 </div>
+                <p class="product-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
                 <div class="product-action">
-                  <input type="checkbox" id="heart4" />
-                  <label for="heart4"></label>
-                  <button class="product-saved"></button>
+                  <div class="action-interaction">
+                    <input type="checkbox" id="heart4" />
+                    <label for="heart4"></label>
+                    <button class="product-saved"></button>
+                  </div>
+
                   <a class="product-link" href="#">Visit</a>
                 </div>
               </article>
             </li>
-
             <li class="category-item">
               <article class="category-product">
                 <div class="product-grup">
                   <img src="./src/img/invision.svg" alt="invision_logo" />
-                  <h3 class="product-title">Invision</h3>
-                  <p class="product-about">Trial & Paid</p>
-                  <p class="product-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <div class="category-text-grup">
+                    <h3 class="product-title">Invision</h3>
+                    <p class="product-about">Trial & Paid</p>
+                  </div>
                 </div>
+                <p class="product-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
                 <div class="product-action">
-                  <input type="checkbox" id="heart5" />
-                  <label for="heart5"></label>
-                  <button class="product-saved"></button>
+                  <div class="action-interaction">
+                    <input type="checkbox" id="heart5" />
+                    <label for="heart5"></label>
+                    <button class="product-saved"></button>
+                  </div>
+
                   <a class="product-link" href="#">Visit</a>
                 </div>
               </article>
@@ -228,38 +274,59 @@
         </div>
       </section>
       <section class="collaborations">
-        <div class="container">
+        <div class="container collaborations-content">
           <h2 class="collaborations-title">Trusted more than 150+ brand</h2>
           <ul class="collaborations-list">
             <li class="collaborations-item">
-              <a class="collaborations-link" href="https://www.microsoft.com/"
-                >Microsoft</a
-              >
+              <div class="collaborations-photo">
+                <img
+                  class="collaborations-img"
+                  src="./src/img/logos_microsoft.svg"
+                  alt="logos_microsoft"
+                />
+              </div>
             </li>
             <li class="collaborations-item">
-              <a class="collaborations-link" href="https://www.google.com/"
-                >Google</a
-              >
+              <div class="collaborations-photo">
+                <img
+                  class="collaborations-img"
+                  src="./src/img/logos_google.svg"
+                  alt="logos_google"
+                />
+              </div>
             </li>
             <li class="collaborations-item">
-              <a class="collaborations-link" href="https://slack.com/">slack</a>
+              <div class="collaborations-photo">
+                <img
+                  class="collaborations-img"
+                  src="./src/img/logos_slack.svg"
+                  alt="logos_slack"
+                />
+              </div>
             </li>
             <li class="collaborations-item">
-              <a class="collaborations-link" href="https://wordpress.com/"
-                >WordPress</a
-              >
+              <div class="collaborations-photo">
+                <img
+                  class="collaborations-img"
+                  src="./src/img/logos_wordpress.svg"
+                  alt="logos_wordpress"
+                />
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="helper">
         <div class="container">
-          <h2 class="helper-title">Newcomer Tools</h2>
-          <p class="helper-text">
-            Wow! see the latest update of the most recommended tools from
-            reliable designers and developers
-          </p>
-          <button class="helper-button">Explore more</button>
+          <div class="helper-grup">
+            <h2 class="helper-title">Newcomer Tools</h2>
+            <p class="helper-text">
+              Wow! see the latest update of the most recommended tools from
+              reliable designers and developers
+            </p>
+            <button class="helper-button">Explore more</button>
+          </div>
+
           <ul class="helper-list">
             <li class="helper-item">
               <article class="helper-produkt">
@@ -341,13 +408,15 @@
       </section>
       <section class="team">
         <div class="container">
+          <h2 hidden>Teammate names</h2>
           <button class="team-button-left"></button>
           <article class="team-teammate">
+            <h3 hidden>Ronald Richards</h3>
             <div class="teammate-photo">
               <img
                 class="teammate-img"
                 src="./src/img/richard.webp"
-                alt="maxim"
+                alt="Ronald_Richards"
               />
             </div>
             <p class="teammate-text">
@@ -369,12 +438,14 @@
             Join us and get tips & tricks to become a great Designer and
             Developer
           </p>
-          <input
-            class="reg-line"
-            type="text"
-            placeholder="Enter your email..."
-          />
-          <button class="reg-button">Join Us</button>
+          <div class="reg-container">
+            <input
+              class="reg-line"
+              type="text"
+              placeholder="Enter your email..."
+            />
+            <button class="reg-button">Join Us</button>
+          </div>
         </div>
       </section>
     </main>
