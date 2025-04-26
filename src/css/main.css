@@ -7,8 +7,10 @@
   --color-border-button: rgba(255, 255, 255, 0.1);
   --color-bg-button: rgb(255, 110, 48);
   --color-product-about: rgba(255, 165, 55, 0.55);
+  --color-bg-item: rgba(44, 53, 61, 0.2);
   --color-bg-search_bar: rgb(40, 48, 54);
   --color-bg-primeri: rgb(30, 37, 43);
+  --color-bg-r_gradient: rgba(255, 73, 66, 0.2);
   --font-primeri: "Poppins";
 }
 
@@ -40,6 +42,16 @@ body {
   color: var(--color-text-title);
   font-weight: 600;
   flex-grow: 2;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
 }
 .nav-list {
   display: flex;
@@ -50,6 +62,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
+  align-items: center;
 }
 .button-login {
   font-weight: 600;
@@ -117,6 +130,7 @@ body {
 }
 .category {
   padding-bottom: 212px;
+  padding-top: 200px;
 }
 .category-content {
   display: flex;
@@ -197,6 +211,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-bg-item);
+  padding: 55px 82px;
+  border-radius: 25px;
+  content: "";
+  background-image: radial-gradient(
+    circle at top left,
+    var(--color-bg-r_gradient) 0% 5%,
+    var(--color-bg-item) 12% 100%
+  );
 }
 .collaborations-list {
   display: flex;
@@ -209,10 +232,12 @@ body {
   color: var(--color-text-title);
 }
 .helper {
-  padding-top: 201;
+  padding-top: 201px;
+}
+.helper-content {
+  display: flex;
 }
 .helper-grup {
-  width: 427px;
   height: 300px;
 }
 .helper-title {
@@ -220,11 +245,14 @@ body {
   font-weight: 500;
   font-size: 48px;
   line-height: 130%;
+  padding-bottom: 30px;
 }
 .helper-text {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.67;
+  width: 427px;
+  padding-bottom: 60px;
 }
 .helper-button {
   background-color: var(--color-bg-button);
@@ -234,8 +262,39 @@ body {
   font-size: 18px;
   color: var(--color-text-button);
 }
+.helper-list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.helper-produkt {
+  width: 288px;
+  height: 284px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.helper-product-action {
+  display: flex;
+  justify-content: center;
+}
+.helper-action-interaction {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-grow: 1;
+}
 .helper-produkt {
   padding: 28px 21px;
+}
+.team {
+  padding-bottom: 100px;
+}
+.team-teammate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 .teammate-text {
   font-weight: 400;
@@ -244,15 +303,27 @@ body {
   letter-spacing: 0.01em;
   color: var(--color-text-white78);
 }
+.registration {
+  padding-top: 250px;
+}
+.reg-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .reg-title {
   font-weight: 500;
   font-size: 48px;
   line-height: 1.3;
+  color: var(--color-text-title);
+  padding-bottom: 25px;
 }
 .reg-text {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.67;
+  padding-bottom: 100px;
 }
 .reg-container {
   display: flex;
@@ -261,6 +332,7 @@ body {
   background-color: var(--color-bg-search_bar);
   width: 500px;
   padding: 8px 12px 8px 24px;
+  margin-bottom: 240px;
 }
 .reg-line {
   background-color: var(--color-bg-search_bar);
@@ -278,14 +350,48 @@ body {
   border: none;
   cursor: pointer;
 }
+.footer {
+  padding-bottom: 70px;
+  padding-top: 100px;
+}
+.footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-text-button);
+  opacity: 0.15;
+  margin-bottom: 100px;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 115px;
+}
+.footer-logo {
+  display: flex;
+  padding-bottom: 25px;
+  align-items: center;
+}
+.footer-logo::before {
+  padding: 7px 9px 9px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/footer_logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .footer-info-copyright {
   color: var(--color-text-title);
   font-weight: 500;
+  padding-bottom: 20px;
 }
 .footer-info-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 179%;
+  width: 260px;
 }
 .contact-title,
 .categories-title,
@@ -293,4 +399,13 @@ body {
   font-weight: 500;
   font-size: 20px;
   color: var(--color-text-title);
+  padding-bottom: 20px;
+}
+.address-link,
+.categories-link,
+.company-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
