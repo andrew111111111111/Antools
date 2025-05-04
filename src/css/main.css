@@ -278,6 +278,7 @@ body {
   border-radius: 5px;
   padding-top: 10px;
   padding-inline: 25px;
+  color: var(--color-text-button);
 }
 .category-button {
   font-size: 20px;
@@ -348,6 +349,10 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  gap: 25px;
+}
+.helper-item:nth-child(-2 + n) {
+  padding-bottom: 50px;
 }
 .helper-produkt {
   width: 288px;
@@ -355,6 +360,21 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 28px 21px;
+}
+.helper-produkt:hover {
+  background-color: var(--color-bg-categies);
+  border-radius: 10px;
+}
+.helper-produkt:has(.like:checked) {
+  transform: translateY(-15px);
+  background-color: var(--color-bg-categies);
+  border-radius: 10px;
+  background-image: radial-gradient(
+    circle at top right,
+    var(--color-gb-category_grdient) 0% 1%,
+    var(--color-bg-categies) 15% 100%
+  );
 }
 .helper-text-grup {
   width: 101px;
@@ -371,20 +391,47 @@ body {
   gap: 12px;
   flex-grow: 1;
 }
-.helper-produkt {
-  padding: 28px 21px;
+.helper-product-link {
+  padding: 9px 35px;
+}
+.helper-product-link:hover {
+  color: var(--color-text-button);
+  background-color: var(--color-bg-button);
+
+  border-radius: 5px;
 }
 .team {
   padding-bottom: 100px;
 }
+.team-container {
+  display: flex;
+  align-items: center;
+}
+.team-button-left {
+  background-color: inherit;
+  width: 12px;
+  padding: 12px 24px;
+  height: 24px;
+  background-image: url(../img/button-left.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.team-button-left:hover {
+  width: 12px;
+  height: 24px;
+  background-image: url(../img/button-left_hover.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .team-teammate {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 57px;
-}
-.team-container {
-  display: flex;
+  padding-inline: 140px;
 }
 
 .teammate-text {
@@ -407,11 +454,23 @@ body {
   width: 450px;
   display: flex;
 }
-.teammate-text::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-image: url(../img/team_“.svg);
+.team-button-right {
+  background-color: inherit;
+  width: 12px;
+  padding: 12px 24px;
+  height: 24px;
+  background-image: url(../img/button-right.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.team-button-right:hover {
+  width: 12px;
+  height: 24px;
+  background-image: url(../img/button-right_hover.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .registration {
   padding-top: 250px;
