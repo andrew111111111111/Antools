@@ -9,7 +9,9 @@
   --color-product-about: rgba(255, 165, 55, 0.55);
   --color-bg-item: rgba(44, 53, 61, 0.2);
   --color-bg-search_bar: rgb(40, 48, 54);
+  --color-bg-categies: rgba(40, 48, 54, 0.6);
   --color-bg-primeri: rgb(30, 37, 43);
+  --color-gb-category_grdient: rgba(255, 110, 48, 0.2);
   --color-bg-r_gradient: rgba(255, 73, 66, 0.2);
   --font-primeri: "Poppins";
 }
@@ -29,6 +31,7 @@ body {
 }
 .header {
   padding-top: 26px;
+  padding-bottom: 60px;
 }
 .header-container {
   max-width: 1244px;
@@ -58,6 +61,21 @@ body {
   justify-content: center;
   gap: 50px;
 }
+.categories-menu {
+  position: relative;
+}
+.submenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+.categories-menu:hover .submenu {
+  opacity: 1;
+  pointer-events: all;
+}
 .action-list {
   display: flex;
   justify-content: center;
@@ -77,9 +95,13 @@ body {
 }
 .hero {
   padding-top: 104px;
+  background-image: url(../img/illustration.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
 }
 .hero-content {
-  max-width: 600px;
+  width: 600px;
   padding-bottom: 110px;
 }
 .hero-title {
@@ -143,11 +165,13 @@ body {
   font-weight: 500;
   font-size: 48px;
   line-height: 1.3;
+  padding-bottom: 25px;
 }
 .category-subtitle {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.67;
+  max-width: 455px;
 }
 .category-list {
   display: flex;
@@ -157,6 +181,7 @@ body {
   text-align: start;
   gap: 24px;
   max-width: 1224px;
+  padding-top: 110px;
   padding-bottom: 100px;
 }
 .category-product {
@@ -164,6 +189,19 @@ body {
   height: 228px;
   padding: 33px;
   box-sizing: content-box;
+  border-radius: 10px;
+}
+.category-product:hover {
+  background-color: var(--color-bg-categies);
+}
+.category-product:has(.like:checked) {
+  transform: translateY(-20px);
+  background-color: var(--color-bg-categies);
+  background-image: radial-gradient(
+    circle at top right,
+    var(--color-gb-category_grdient) 0% 1%,
+    var(--color-bg-categies) 25% 100%
+  );
 }
 .product-grup {
   display: flex;
@@ -197,6 +235,49 @@ body {
   justify-content: flex-start;
   gap: 12px;
   flex-grow: 1;
+  align-items: center;
+}
+.like {
+  appearance: none;
+  width: 42px;
+  height: 42px;
+  background-image: url(../img/like_fff.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+  border-radius: 10px;
+}
+
+.like:checked {
+  background-image: url(../img/like_red.svg);
+  background-color: var(--color-bg-search_bar);
+}
+.like:hover {
+  background-color: var(--color-bg-search_bar);
+}
+.product-saved {
+  width: 42px;
+  height: 42px;
+  background-image: url(../img/button_saved.svg);
+  background-color: inherit;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+.product-saved:hover {
+  background-color: var(--color-bg-search_bar);
+}
+.product-link {
+  padding-top: 10px;
+  padding-inline: 25px;
+  align-items: center;
+}
+.product-link:hover {
+  background-color: var(--color-bg-button);
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-inline: 25px;
 }
 .category-button {
   font-size: 20px;
@@ -230,6 +311,7 @@ body {
   font-weight: 500;
   font-size: 24px;
   color: var(--color-text-title);
+  padding-bottom: 55px;
 }
 .helper {
   padding-top: 201px;
@@ -271,12 +353,17 @@ body {
   width: 288px;
   height: 284px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+}
+.helper-text-grup {
+  width: 101px;
 }
 .helper-product-action {
+  width: 245px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .helper-action-interaction {
   display: flex;
@@ -294,14 +381,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 57px;
 }
+.team-container {
+  display: flex;
+}
+
 .teammate-text {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding-left: 50px;
+  content: "";
+  background-image: url(../img/team_“.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-top: 50px;
+}
+.teammate-p {
   font-weight: 400;
   font-size: 14px;
-  line-height: 2.14;
+  line-height: 214%;
   letter-spacing: 0.01em;
   color: var(--color-text-white78);
+  width: 450px;
+  display: flex;
+}
+.teammate-text::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/team_“.svg);
 }
 .registration {
   padding-top: 250px;

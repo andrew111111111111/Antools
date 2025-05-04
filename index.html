@@ -33,7 +33,15 @@
               <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#category">Categories</a>
+              <a class="nav-link categories-menu" href="#">Categories</a>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a class="sub-link" href="#category">Most Popular Tools</a>
+                </li>
+                <li class="header-categories-item">
+                  <a class="submenu-link" href="#helper">Newcomer Tools</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">My Collections</a>
@@ -54,7 +62,7 @@
 
     <main class="main">
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <div class="hero-content">
             <h1 class="hero-title">
               Awesome tools for Designer & Developer
@@ -142,12 +150,13 @@
                 </p>
                 <div class="product-action">
                   <div class="action-interaction">
-                    <input type="checkbox" id="heart0" />
-                    <label for="heart0"></label>
+                    <input class="like" type="checkbox" id="heart0" />
+                    <label class="heart" for="heart0"></label>
                     <button class="product-saved"></button>
                   </div>
-
-                  <a class="product-link" href="#">Visit</a>
+                  <a class="product-link" href="https://www.figma.com/"
+                    >Visit</a
+                  >
                 </div>
               </article>
             </li>
@@ -165,12 +174,14 @@
                 </p>
                 <div class="product-action">
                   <div class="action-interaction">
-                    <input type="checkbox" id="heart1" />
-                    <label for="heart1"></label>
+                    <input class="like" type="checkbox" id="heart1" />
+                    <label class="heart" for="heart1"></label>
                     <button class="product-saved"></button>
                   </div>
 
-                  <a class="product-link" href="#">Visit</a>
+                  <a class="product-link" href="https://www.sketch.com/"
+                    >Visit</a
+                  >
                 </div>
               </article>
             </li>
@@ -191,12 +202,16 @@
                 </p>
                 <div class="product-action">
                   <div class="action-interaction">
-                    <input type="checkbox" id="heart2" />
-                    <label for="heart2"></label>
+                    <input class="like" type="checkbox" id="heart2" />
+                    <label class="heart" for="heart2"></label>
                     <button class="product-saved"></button>
                   </div>
 
-                  <a class="product-link" href="#">Visit</a>
+                  <a
+                    class="product-link"
+                    href="https://visualstudio.microsoft.com/"
+                    >Visit</a
+                  >
                 </div>
               </article>
             </li>
@@ -214,12 +229,14 @@
                 </p>
                 <div class="product-action">
                   <div class="action-interaction">
-                    <input type="checkbox" id="heart3" />
-                    <label for="heart3"></label>
+                    <input class="like" type="checkbox" id="heart3" />
+                    <label class="heart" for="heart3"></label>
                     <button class="product-saved"></button>
                   </div>
 
-                  <a class="product-link" href="#">Visit</a>
+                  <a class="product-link" href="https://www.notion.com/"
+                    >Visit</a
+                  >
                 </div>
               </article>
             </li>
@@ -237,12 +254,12 @@
                 </p>
                 <div class="product-action">
                   <div class="action-interaction">
-                    <input type="checkbox" id="heart4" />
-                    <label for="heart4"></label>
+                    <input class="like" type="checkbox" id="heart4" />
+                    <label class="heart" for="heart4"></label>
                     <button class="product-saved"></button>
                   </div>
 
-                  <a class="product-link" href="#">Visit</a>
+                  <a class="product-link" href="https://slack.com/">Visit</a>
                 </div>
               </article>
             </li>
@@ -260,8 +277,8 @@
                 </p>
                 <div class="product-action">
                   <div class="action-interaction">
-                    <input type="checkbox" id="heart5" />
-                    <label for="heart5"></label>
+                    <input class="like" type="checkbox" id="heart5" />
+                    <label class="heart" for="heart5"></label>
                     <button class="product-saved"></button>
                   </div>
 
@@ -350,7 +367,7 @@
               <article class="helper-produkt">
                 <div class="product-grup">
                   <img src="./src/img/zeplin.webp" alt="zeplin" />
-                  <div class="category-text-grup">
+                  <div class="helper-text-grup">
                     <h3 class="product-title">Zeplin</h3>
                     <p class="product-about">Free & Paid</p>
                   </div>
@@ -359,14 +376,14 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
 
-                <div class="product-action">
-                  <div class="action-interaction">
-                    <input type="checkbox" id="heart6" />
-                    <label for="heart6"></label>
+                <div class="helper-product-action">
+                  <div class="helper-action-interaction">
+                    <input class="like" type="checkbox" id="heart6" />
+                    <label class="heart" for="heart6"></label>
                     <button class="product-saved"></button>
                   </div>
 
-                  <a class="product-link" href="#">Visit</a>
+                  <a class="product-link" href="https://zeplin.io/">Visit</a>
                 </div>
               </article>
             </li>
@@ -384,14 +401,21 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
 
-                <div class="product-action">
-                  <div class="action-interaction">
-                    <input type="checkbox" id="heart7" />
-                    <label for="heart7"></label>
+                <div class="helper-product-action">
+                  <div class="helper-action-interaction">
+                    <input
+                      class="like"
+                      class="like"
+                      type="checkbox"
+                      id="heart7"
+                    />
+                    <label class="heart" for="heart7"></label>
                     <button class="product-saved"></button>
                   </div>
 
-                  <a class="product-link" href="#">Visit</a>
+                  <a class="product-link" href="https://www.jetbrains.com/"
+                    >Visit</a
+                  >
                 </div>
               </article>
             </li>
@@ -409,14 +433,16 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
 
-                <div class="product-action">
+                <div class="helper-product-action">
                   <div class="action-interaction">
-                    <input type="checkbox" id="heart8" />
-                    <label for="heart8"></label>
+                    <input class="like" type="checkbox" id="heart8" />
+                    <label class="heart" for="heart8"></label>
                     <button class="product-saved"></button>
                   </div>
 
-                  <a class="product-link" href="#">Visit</a>
+                  <a class="product-link" href="https://www.jetbrains.com/"
+                    >Visit</a
+                  >
                 </div>
               </article>
             </li>
@@ -434,14 +460,16 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
 
-                <div class="product-action">
-                  <div class="action-interaction">
-                    <input type="checkbox" id="heart9" />
-                    <label for="heart9"></label>
+                <div class="helper-product-action">
+                  <div class="helper-action-interaction">
+                    <input class="like" type="checkbox" id="heart9" />
+                    <label class="heart" for="heart9"></label>
                     <button class="product-saved"></button>
                   </div>
 
-                  <a class="product-link" href="#">Visit</a>
+                  <a class="product-link" href="https://procreate.com/"
+                    >Visit</a
+                  >
                 </div>
               </article>
             </li>
@@ -449,7 +477,7 @@
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="container team-container">
           <button class="team-button-left"></button>
           <div class="team-teammate">
             <div class="teammate-photo">
@@ -459,14 +487,16 @@
                 alt="Ronald_Richards"
               />
             </div>
-            <p class="teammate-text">
-              Incididunt cillum do sint sint enim ullamco id deserunt mollit qui
-              reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do
-              nulla velit labore occaecat do deserunt Lorem magna officia
-              incididunt consectetur amet. Sunt consectetur veniam minim ex
-              commodo sint non. Occaecat aute officia excepteur non laboris id
-              qui ad.
-            </p>
+            <div class="teammate-text">
+              <p class="teammate-p">
+                Incididunt cillum do sint sint enim ullamco id deserunt mollit
+                qui reprehenderit do. Velit ex tempor cillum ad sint occaecat.
+                Do nulla velit labore occaecat do deserunt Lorem magna officia
+                incididunt consectetur amet. Sunt consectetur veniam minim ex
+                commodo sint non. Occaecat aute officia excepteur non laboris id
+                qui ad.
+              </p>
+            </div>
           </div>
           <button class="team-button-right"></button>
         </div>
