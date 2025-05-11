@@ -32,7 +32,6 @@ body {
 }
 .header {
   padding-top: 26px;
-  padding-bottom: 60px;
 }
 .header-container {
   max-width: 1244px;
@@ -49,6 +48,10 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.logo:hover {
+  text-shadow: 5px 5px 5px var(--color-border-button),
+    -5px 5px 5px var(--color-border-button);
 }
 .logo::before {
   content: "";
@@ -100,8 +103,12 @@ body {
   border-radius: 8px;
   color: var(--color-text-button);
 }
+.button-sing_up:hover {
+  box-shadow: 5px 5px 5px var(--color-border-button),
+    -5px 5px 5px var(--color-border-button);
+}
 .hero {
-  margin-top: 58px;
+  padding-top: 58px;
   background-image: url(../img/illustration.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -134,6 +141,10 @@ body {
   padding: 8px 11px 8px 18px;
   gap: 13px;
 }
+.hero-search:hover {
+  box-shadow: 5px 5px 5px var(--color-border-button),
+    -5px 5px 5px var(--color-border-button);
+}
 .hero-search::before {
   content: "";
   width: 24px;
@@ -155,6 +166,12 @@ body {
   border: none;
   cursor: pointer;
 }
+.search-button:hover {
+  box-shadow: 5px 1px 5px var(--color-border-button),
+    -5px -1px 5px var(--color-border-button),
+    5px -1px 5px var(--color-border-button),
+    -5px 1px 5px var(--color-border-button);
+}
 .about-list {
   padding-top: 110px;
   display: flex;
@@ -167,8 +184,7 @@ body {
   height: 58px;
 }
 .category {
-  margin-top: 200px;
-  margin-bottom: 212px;
+  padding-top: 200px;
 }
 .category-content {
   display: flex;
@@ -287,6 +303,19 @@ body {
 }
 .product-saved:hover {
   background-color: var(--color-bg-search_bar);
+  box-shadow: 5px 5px 5px var(--color-border-button),
+    -5px 5px 5px var(--color-border-button);
+}
+.product-saved:active {
+  width: 42px;
+  height: 42px;
+  background-image: url(../img/button-saved_all.svg);
+  background-color: inherit;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  background-color: var(--color-bg-search_bar);
 }
 .product-link {
   padding-top: 10px;
@@ -299,6 +328,8 @@ body {
   padding-top: 10px;
   padding-inline: 25px;
   color: var(--color-text-button);
+  box-shadow: 5px 5px 5px var(--color-border-button),
+    -5px 5px 5px var(--color-border-button);
 }
 .category-button {
   font-size: 20px;
@@ -307,6 +338,13 @@ body {
   background-color: var(--color-bg-primeri);
   border: 1px solid var(--color-border-button);
   border-radius: 8px;
+}
+.category-button:hover {
+  box-shadow: 5px 5px 5px var(--color-border-button),
+    -5px 5px 5px var(--color-border-button);
+}
+.collaborations {
+  padding-top: 212px;
 }
 .collaborations-content {
   display: flex;
@@ -335,7 +373,7 @@ body {
   padding-bottom: 55px;
 }
 .helper {
-  margin-top: 190px;
+  padding-top: 190px;
 }
 .helper-content {
   display: flex;
@@ -364,6 +402,10 @@ body {
   font-weight: 500;
   font-size: 18px;
   color: var(--color-text-button);
+}
+.helper-button:hover {
+  box-shadow: 5px 5px 5px var(--color-border-button),
+    -5px 5px 5px var(--color-border-button);
 }
 .helper-list {
   display: flex;
@@ -414,14 +456,20 @@ body {
 .helper-product-link {
   padding: 9px 35px;
 }
+.helper-produkt:has(.like:checked) .helper-product-link {
+  color: var(--color-text-button);
+  background-color: var(--color-bg-button);
+  border-radius: 5px;
+}
 .helper-product-link:hover {
   color: var(--color-text-button);
   background-color: var(--color-bg-button);
-
+  box-shadow: 5px 5px 5px var(--color-border-button),
+    -5px 5px 5px var(--color-border-button);
   border-radius: 5px;
 }
 .team {
-  margin-bottom: 250px;
+  padding-top: 200px;
 }
 .team-container {
   display: flex;
@@ -493,7 +541,8 @@ body {
   background-repeat: no-repeat;
 }
 .registration {
-  margin-bottom: 240px;
+  padding-top: 250px;
+  padding-bottom: 240px;
 }
 .reg-content {
   display: flex;
@@ -523,7 +572,10 @@ body {
   background-color: var(--color-bg-search_bar);
   width: 500px;
   padding: 8px 12px 8px 24px;
-  margin-bottom: 240px;
+}
+.reg-container:hover {
+  box-shadow: 5px 5px 5px var(--color-border-button),
+    -5px 5px 5px var(--color-border-button);
 }
 .reg-line {
   background-color: var(--color-bg-search_bar);
@@ -540,6 +592,12 @@ body {
   font-weight: 600;
   border: none;
   cursor: pointer;
+}
+.reg-button:hover {
+  box-shadow: 5px 1px 5px var(--color-border-button),
+    -5px -1px 5px var(--color-border-button),
+    5px -1px 5px var(--color-border-button),
+    -5px 1px 5px var(--color-border-button);
 }
 .footer {
   border-top: solid 1px var(--color-border-footer);
@@ -596,4 +654,10 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+}
+.address-link:hover,
+.categories-link:hover,
+.company-link:hover {
+  text-shadow: 1px 1px 5px var(--color-border-button),
+    -1px 1px 5px var(--color-border-button);
 }
