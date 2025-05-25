@@ -178,10 +178,20 @@ body {
   justify-content: flex-start;
   gap: 8px;
 }
-.about-link {
-  color: var(--color-text-white78);
+.about-photo {
   width: 58px;
   height: 58px;
+}
+.about-list:has(.about-photo) {
+  fill: var(--color-text-white78);
+}
+.about-list:has(.about-photo:hover) {
+  fill: var(--color-border-button);
+  transition: 0.5s;
+}
+.about-photo:hover {
+  fill: var(--color-text-button);
+  transition: 1s;
 }
 .category {
   padding-top: 200px;
