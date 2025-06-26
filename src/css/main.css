@@ -32,6 +32,12 @@ body {
 }
 .header {
   padding-top: 26px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  min-height: 70px;
 }
 .header-container {
   max-width: 1244px;
@@ -68,18 +74,21 @@ body {
 .nav-link:hover {
   color: var(--color-text-white78);
 }
-.categories-menu {
+.nav-item:nth-child(2) {
   position: relative;
 }
 .submenu {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 100%;
+  top: 20px;
   opacity: 0;
   pointer-events: none;
 }
-.categories-menu:hover .submenu {
+.submenu-link:hover {
+  color: var(--color-text-white78);
+}
+.nav-item:nth-child(2):hover .submenu {
   opacity: 1;
   pointer-events: all;
 }
@@ -91,7 +100,6 @@ body {
 }
 .button-login {
   font-weight: 600;
-  background-color: var(--color-bg-primeri);
 }
 .button-login:hover {
   color: var(--color-text-white78);
@@ -106,6 +114,9 @@ body {
 .button-sing_up:hover {
   box-shadow: 5px 5px 5px var(--color-border-button),
     -5px 5px 5px var(--color-border-button);
+}
+.main {
+  padding-top: 70px;
 }
 .hero {
   padding-top: 58px;
