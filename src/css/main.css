@@ -54,8 +54,10 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  transition: 500ms ease;
 }
 .logo:hover {
+  transition: 500ms ease;
   text-shadow: 5px 5px 5px var(--color-border-button),
     -5px 5px 5px var(--color-border-button);
 }
@@ -71,8 +73,12 @@ body {
   justify-content: center;
   gap: 50px;
 }
+.nav-link {
+  transition: 500ms ease;
+}
 .nav-link:hover {
   color: var(--color-text-white78);
+  transition: 500ms ease;
 }
 .nav-item:nth-child(2) {
   position: relative;
@@ -85,8 +91,12 @@ body {
   opacity: 0;
   pointer-events: none;
 }
-.submenu-link:hover {
+.sub-link {
+  transition: 500ms ease;
+}
+.sub-link:hover {
   color: var(--color-text-white78);
+  transition: 500ms ease;
 }
 .nav-item:nth-child(2):hover .submenu {
   opacity: 1;
@@ -100,9 +110,11 @@ body {
 }
 .button-login {
   font-weight: 600;
+  transition: 500ms ease;
 }
 .button-login:hover {
   color: var(--color-text-white78);
+  transition: 500ms ease;
 }
 .button-sing_up {
   font-weight: 600;
@@ -110,10 +122,12 @@ body {
   padding: 12px 28px;
   border-radius: 8px;
   color: var(--color-text-button);
+  transition: 500ms ease;
 }
 .button-sing_up:hover {
   box-shadow: 5px 5px 5px var(--color-border-button),
     -5px 5px 5px var(--color-border-button);
+  transition: 500ms ease;
 }
 .main {
   padding-top: 70px;
@@ -151,10 +165,12 @@ body {
   width: 500px;
   padding: 8px 11px 8px 18px;
   gap: 13px;
+  transition: 500ms ease;
 }
 .hero-search:hover {
   box-shadow: 5px 5px 5px var(--color-border-button),
     -5px 5px 5px var(--color-border-button);
+  transition: 500ms ease;
 }
 .hero-search::before {
   content: "";
@@ -176,12 +192,14 @@ body {
   font-weight: 600;
   border: none;
   cursor: pointer;
+  transition: 500ms ease;
 }
 .search-button:hover {
   box-shadow: 5px 1px 5px var(--color-border-button),
     -5px -1px 5px var(--color-border-button),
     5px -1px 5px var(--color-border-button),
     -5px 1px 5px var(--color-border-button);
+  transition: 500ms ease;
 }
 .about-list {
   padding-top: 110px;
@@ -192,9 +210,11 @@ body {
 .about-photo {
   width: 58px;
   height: 58px;
+  transition: 0.75s;
 }
 .about-list:has(.about-photo) {
   fill: var(--color-text-white78);
+  transition: 0.5s;
 }
 .about-list:has(.about-photo:hover) {
   fill: var(--color-border-button);
@@ -247,11 +267,14 @@ body {
   padding: 33px;
   box-sizing: content-box;
   border-radius: 10px;
+  transition: 500ms ease;
 }
 .category-product:hover {
   background-color: var(--color-bg-categies);
+  transition: 500ms ease;
 }
 .category-product:has(.like:checked) {
+  transition: 1s ease;
   transform: translateY(-20px);
   background-color: var(--color-bg-categies);
   background-image: radial-gradient(
@@ -303,14 +326,17 @@ body {
   background-repeat: no-repeat;
   background-size: 28px;
   border-radius: 10px;
+  transition: 1s ease;
 }
 
 .like:checked {
+  transition: 1s ease;
   background-image: url(../img/like_red.svg);
   background-color: var(--color-bg-search_bar);
 }
 .like:hover {
   background-color: var(--color-bg-search_bar);
+  transition: 500ms ease;
 }
 .product-saved {
   width: 42px;
@@ -321,11 +347,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
+  transition: 500ms ease;
 }
 .product-saved:hover {
   background-color: var(--color-bg-search_bar);
   box-shadow: 5px 5px 5px var(--color-border-button),
     -5px 5px 5px var(--color-border-button);
+  transition: 500ms ease;
 }
 .product-saved:active {
   width: 42px;
@@ -337,11 +365,13 @@ body {
   background-position: center;
   border-radius: 10px;
   background-color: var(--color-bg-search_bar);
+  transition: 500ms ease;
 }
 .product-link {
   padding-top: 10px;
   padding-inline: 25px;
   align-items: center;
+  transition: 500ms ease;
 }
 .product-link:hover {
   background-color: var(--color-bg-button);
@@ -351,6 +381,7 @@ body {
   color: var(--color-text-button);
   box-shadow: 5px 5px 5px var(--color-border-button),
     -5px 5px 5px var(--color-border-button);
+  transition: 500ms ease;
 }
 .category-button {
   font-size: 20px;
@@ -359,10 +390,12 @@ body {
   background-color: var(--color-bg-primeri);
   border: 1px solid var(--color-border-button);
   border-radius: 8px;
+  transition: 500ms ease;
 }
 .category-button:hover {
   box-shadow: 5px 5px 5px var(--color-border-button),
     -5px 5px 5px var(--color-border-button);
+  transition: 500ms ease;
 }
 .collaborations {
   padding-top: 212px;
@@ -423,10 +456,12 @@ body {
   font-weight: 500;
   font-size: 18px;
   color: var(--color-text-button);
+  transition: 500ms ease;
 }
 .helper-button:hover {
   box-shadow: 5px 5px 5px var(--color-border-button),
     -5px 5px 5px var(--color-border-button);
+  transition: 500ms ease;
 }
 .helper-list {
   display: flex;
@@ -448,6 +483,7 @@ body {
 .helper-produkt:hover {
   background-color: var(--color-bg-categies);
   border-radius: 10px;
+  transition: 500ms ease;
 }
 .helper-produkt:has(.like:checked) {
   transform: translateY(-20px);
@@ -458,6 +494,7 @@ body {
     var(--color-gb-category_grdient) 0% 1%,
     var(--color-bg-categies) 15% 100%
   );
+  transition: 500ms ease;
 }
 .helper-text-grup {
   width: 101px;
@@ -481,6 +518,7 @@ body {
   color: var(--color-text-button);
   background-color: var(--color-bg-button);
   border-radius: 5px;
+  transition: 500ms ease;
 }
 .helper-product-link:hover {
   color: var(--color-text-button);
@@ -488,6 +526,7 @@ body {
   box-shadow: 5px 5px 5px var(--color-border-button),
     -5px 5px 5px var(--color-border-button);
   border-radius: 5px;
+  transition: 500ms ease;
 }
 .team {
   padding-top: 200px;
@@ -505,6 +544,7 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: 500ms ease;
 }
 .team-button-left:hover {
   width: 12px;
@@ -513,6 +553,7 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: 500ms ease;
 }
 
 .team-teammate {
@@ -552,6 +593,7 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: 500ms ease;
 }
 .team-button-right:hover {
   width: 12px;
@@ -560,6 +602,7 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: 500ms ease;
 }
 .registration {
   padding-top: 250px;
@@ -593,10 +636,12 @@ body {
   background-color: var(--color-bg-search_bar);
   width: 500px;
   padding: 8px 12px 8px 24px;
+  transition: 500ms ease;
 }
 .reg-container:hover {
   box-shadow: 5px 5px 5px var(--color-border-button),
     -5px 5px 5px var(--color-border-button);
+  transition: 500ms ease;
 }
 .reg-line {
   background-color: var(--color-bg-search_bar);
@@ -613,8 +658,10 @@ body {
   font-weight: 600;
   border: none;
   cursor: pointer;
+  transition: 500ms ease;
 }
 .reg-button:hover {
+  transition: 500ms ease;
   box-shadow: 5px 1px 5px var(--color-border-button),
     -5px -1px 5px var(--color-border-button),
     5px -1px 5px var(--color-border-button),
@@ -636,6 +683,7 @@ body {
   gap: 115px;
 }
 .footer-logo {
+  transition: 500ms ease;
   display: flex;
   padding-bottom: 25px;
   align-items: center;
@@ -675,10 +723,12 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  transition: 500ms ease;
 }
 .address-link:hover,
 .categories-link:hover,
 .company-link:hover {
   text-shadow: 1px 1px 5px var(--color-border-button),
     -1px 1px 5px var(--color-border-button);
+  transition: 500ms ease;
 }
